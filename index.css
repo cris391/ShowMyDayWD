@@ -1,0 +1,75 @@
+#wrapper {
+  /* background: red; */
+  overflow: auto;
+}
+#title {
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+#time {
+  float: right;
+  /* background: blue; */
+}
+footer {
+  position: fixed;
+  text-align: left;
+  bottom: 0;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+#taskList {
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+@keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  { left:50px; top:0px;}
+  50%  { left:50px; top:50px;}
+  75%  { left:0px; top:50px;}
+  100% { left:0px; top:0px;}
+}
+
+/* The element to apply the animation to */
+h1 {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}

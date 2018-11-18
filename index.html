@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>WD Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+  </head>
+  <body>
+    <div class="tab"><button class="tablinks" onclick="openTab(event, 'TomorrowsTasks')">Tomorrow's Tasks</button></div>
+    <!-- Tab content -->
+    <div id="TomorrowsTasks" class="tabcontent">
+      <ul id="tomorrowTaskList">
+        Tomorrow's tasks are:
+      </ul>
+    </div>
+    <div id="wrapper">
+      <h1 id="title">Cristian's task</h1>
+      <div id="time">
+        <div id="todaysDate"></div>
+        <div id="currentTime"></div>
+      </div>
+
+      <label>Select background color:</label>
+      <select id="selectColor" oninput="changeColor(event)">
+        <option value="white" selected="selected">White</option>
+        <option value="purple">Purple</option>
+        <option value="green">Green</option>
+        <option value="brown">Brown</option>
+      </select>
+
+      <ul id="taskList">
+        Today's task list:
+      </ul>
+
+      <footer><label>Change title:</label> <input type="text" id="textInput" oninput="changeTitle()" /></footer>
+    </div>
+
+    <script type="text/javascript" src="taskss.json"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
